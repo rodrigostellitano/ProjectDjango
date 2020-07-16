@@ -19,7 +19,8 @@ from contas.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', listagem, name='volta_listagem'),
+    path('', listagem, name='url_listagem'),
     path('nova/' , nova_transacao, name='url_nova_transacao'),
+    path('update/<int:pk>/', update, name='url_update'),
     path('home/', home)
 ]
