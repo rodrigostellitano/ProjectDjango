@@ -15,7 +15,11 @@
     <button type="submit">Save</button>
 </form>
 
-<a href="{% url 'url_listagem' %}">Voltar para A lista</a>
+<p><a href="{% url 'url_listagem' %}">Voltar para A lista</a></p>
+{% if transacao%}
+    
+<p><a href="{% url  'url_delete' transacao.id %}">Delet</a></p>
 
+{% endif%}
 </body>
 </html>
