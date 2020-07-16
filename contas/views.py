@@ -61,3 +61,14 @@ def delete(request,pk):
 
 
     return redirect('url_listagem')
+
+
+
+def lista_aluno(request):
+    data = {}
+
+    data['lista_aluno'] = Listagem.objects.all()
+    data['listagem'] = Transacao.objects.all()
+
+
+    return render(request, 'contas/lista_aluno.html', data) 

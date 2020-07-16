@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Aluno</title>
+</head>
+<body>
+    
+    <h2> Alunos</h2>
+
+    <ul>
+        {% for i in lista_aluno %}
+        <li>{{ i }}</li>
+        {% endfor%}
+
+
+        {% for i in listagem %}
+            <li>{{i.descricao}} - {{i.data}} - {{i.valor}} : {{i.categoria}}</li>
+        {% endfor %}
+
+    </ul>
+
+
+</body>
+</html>

@@ -23,5 +23,7 @@ urlpatterns = [
     path('nova/' , nova_transacao, name='url_nova_transacao'),
     path('update/<int:pk>/', update, name='url_update'),
     path('delete/<int:pk>/', delete, name='url_delete'),
-    path('home/', home)
+    path('home/', home),
+    path('lista_aluno', lista_aluno, name='url_lista_aluno')
+
 ]
